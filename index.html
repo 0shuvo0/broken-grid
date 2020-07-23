@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="">
+	<meta name="author" content="MdShuvo">
+	<link rel="stylesheet" href="cubeslider.css">
+	
+	<title>Broken Grid test</title>
+	<style>
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: 'Montserrat','Poppins',Arial,sans-serif;
+	font-size: 1rem;
+}
+
+
+
+
+	.banner{
+		height: 100vh;
+		box-sizing: border-box;
+		padding: 40px;
+	}
+	.banner .banner-content{
+		height: 100%;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.banner-content .cell{
+		height: 100%;
+	}
+	.banner-content .banner-img{
+		width: 40%;
+		position: relative;
+	}
+	.banner-content .banner-img h1{
+		font-size: 3.5em;
+		line-height: 0.9em;
+		font-weight: 900;
+		color: transparent;
+		background-image: url('img/banner-text.jpg');
+		background-size: cover;
+		background-position: center;
+		background-clip: text;
+		-webkit-background-clip: text;
+		position: absolute;
+		top: 30px;
+		left: 60px;
+		width: 120%;
+		padding: 5px 10px;
+		border: 5px solid rgba(0, 0, 0, 0.3);
+	}
+	.banner-content .banner-img img{
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+	.banner-content .typo{
+		width: 60%;
+		box-sizing: border-box;
+		padding-left: 30px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	.banner-content .typo .img{
+		height: 40%;
+		width: 100%;
+		text-align: right;
+		position: relative;
+	}
+	.banner-content .typo .img img{
+		width: 50%;
+	}
+	.banner-content .typo h1{
+		margin: 20px 0 30px;
+		font-weight: 100;
+		font-size: 2em;
+	}
+	.banner-content .typo h1 b{
+		font-weight: 900;
+	}
+	.banner-content .typo .content{
+		display: flex;
+	}
+	.typo .content .col{
+		width: 40%;
+		font-size: 1em;
+		font-weight: 100;
+		letter-spacing: 1px;
+	}
+	.typo .content .col.big{
+		padding: 0 20% 0 20px;
+		border-right: 5px solid #000000;
+	}
+
+
+
+
+@media(max-width: 950px){
+	.banner{
+		height: auto;
+	}
+	.banner-content .banner-img{
+		display: none;
+	}
+	.banner-content .typo{
+		width: 100%;
+		padding-left: 0;
+	}
+	.banner-content .typo .img{
+		height: auto;
+	}
+	.banner-content .typo .img img{
+		width: 100%;
+		height: auto;
+	}
+}
+	</style>
+</head>
+<body>
+	<div class="banner">
+		<div class="banner-content">
+			<div class="banner-img cell">
+				<img src="img/banner-v.jpg" alt="">
+				<h1>Experience best of the world.</h1>
+			</div>
+			<div class="typo cell">
+				<div class="img">
+					<img src="img/banner-h.jpg" alt="">
+				</div>
+				<h1>All Your <b>Favourite</b>s at your Favourite <b>place</b>.</h1>
+				<div class="content">
+					<p class="col">Some random text that makes no sense but it doesn't have to anyways.</p>
+					<p class="col big">That line has got bigger than I expected so I have to type more crap in this line.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
